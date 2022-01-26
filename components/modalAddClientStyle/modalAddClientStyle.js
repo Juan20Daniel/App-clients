@@ -85,6 +85,5 @@ export const modalAddClientStyle = StyleSheet.create({
         fontSize: 25,
         color: '#DF9E38',
         fontWeight: 'bold',
-        lineHeight: 20
     }
 })

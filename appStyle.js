@@ -23,10 +23,10 @@ export const appStyles = StyleSheet.create({
     },
     buttonAddClient: {
         backgroundColor: "#C37D0E",
-        width: 300,
         paddingTop: 10,
         paddingBottom: 10,
-        marginLeft: width / 2 - 150,
+        marginHorizontal: 30,
+        marginBottom: 10,
         borderRadius: 5,
         shadowColor: '#000000',
         shadowOffset: {

@@ -8,7 +8,6 @@ export default function App() {
   const openModal = () => setModal(true);
   const closeModal = () => setModal(false);
   const [ data, setData ] = useState([]);
-  
   return (
     <SafeAreaView style={appStyles.container}>
       <ModalAddClientStyle modal={modal} closeModal={closeModal} data={data} setData={setData}/>
@@ -20,10 +19,10 @@ export default function App() {
         <FlatList 
           data={data}
           keyExtractor={(item) => item.id}
-          renderItem={({item}) => {
+          renderItem={({item, index}) => {
             return (
-              <ItemUsers  data={item} />
-            )
+              <ItemUsers user={item} index={index} data={data} setData={setData}/>
+            );
           }}
         />
       </View>
